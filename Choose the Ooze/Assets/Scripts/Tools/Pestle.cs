@@ -14,6 +14,7 @@ public class Pestle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Move the pestle to the mouse position
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = Vector2.Lerp(transform.position, mousePosition, moveSpeed);
